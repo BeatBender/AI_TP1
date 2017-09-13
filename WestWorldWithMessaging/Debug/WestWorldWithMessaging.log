@@ -1,0 +1,3 @@
+﻿CrudeTimer.obj : warning LNK4075: ' /EDITANDCONTINUE' ignoré à cause de la spécification '/SAFESEH'
+  WestWorldWithMessaging.vcxproj -> D:\Users\PatrickBeatBender\Documents\GitHub\AI_TP1\WestWorldWithMessaging\.\Debug\WestWorldWithMessaging.exe
+  WestWorldWithMessaging.vcxproj -> .\Debug/WestWorldWithMessaging.pdb (Full PDB)
