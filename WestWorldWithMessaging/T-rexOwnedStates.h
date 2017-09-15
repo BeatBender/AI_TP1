@@ -20,9 +20,9 @@ struct Telegram;
 
 //------------------------------------------------------------------------
 //
-// In this state
-//
-//
+// State : TerrorizeCustomers
+// In this state, the T-rex is drunk and terrorize the customers by roaring
+// and biting. 
 //
 //
 //
