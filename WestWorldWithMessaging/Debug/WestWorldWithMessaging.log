@@ -1,7 +1,130 @@
-﻿  T-rex.cpp
+﻿  T-rexOwnedStates.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\sal.h(2361): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\sal.h(2361): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\concurrencysal.h(22): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\concurrencysal.h(22): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vadefs.h(18): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vadefs.h(18): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vadefs.h(122): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vadefs.h(123): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vcruntime.h(81): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vcruntime.h(81): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt.h(12): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt.h(12): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\yvals.h(253): warning C4384: #pragma 'detect_mismatch' doit être uniquement utilisé au niveau de la portée globale
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\yvals.h(257): warning C4384: #pragma 'detect_mismatch' doit être uniquement utilisé au niveau de la portée globale
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\yvals.h(264): warning C4384: #pragma 'detect_mismatch' doit être uniquement utilisé au niveau de la portée globale
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\yvals.h(611): error C2059: erreur de syntaxe : 'namespace'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\yvals.h(611): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\limits.h(13): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\limits.h(13): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(13): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(13): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_malloc.h(13): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_malloc.h(13): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stddef.h(13): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stddef.h(13): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_search.h(16): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_search.h(16): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstdlib.h(13): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstdlib.h(13): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(17): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(17): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\cstdlib(17): error C2059: erreur de syntaxe : 'namespace'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\cstdlib(17): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtr1common(13): error C2059: erreur de syntaxe : 'namespace'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtr1common(13): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(15): error C2059: erreur de syntaxe : 'namespace'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(15): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(78): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(78): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(78): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(78): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(78): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(78): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(88): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(88): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(88): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(88): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(88): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(88): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(89): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(89): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(89): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(89): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(89): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(89): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(90): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(90): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(90): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(90): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(90): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(90): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(91): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(91): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(91): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(91): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(91): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(91): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(92): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(92): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(92): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(92): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(92): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(92): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(93): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(93): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(93): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(93): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(93): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(93): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(94): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(94): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(94): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(94): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(94): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(94): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(95): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(95): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(95): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(95): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(95): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(95): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(97): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(97): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(97): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(97): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(97): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(97): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(99): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(99): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(99): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(99): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(99): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(99): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(100): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(100): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(100): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(100): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(100): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(100): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(101): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(101): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(101): error C2143: erreur de syntaxe : absence de ';' avant '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(101): error C2433: 'enable_if' : 'inline' non autorisé sur les déclarations de données
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(101): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(101): error C2059: erreur de syntaxe : '<'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(102): error C2238: jetons inattendus avant ';'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(102): error C2988: impossible de reconnaître la définition/déclaration de modèle
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtgmath.h(102): fatal error C1003: le nombre d'erreurs est supérieur à 100 ; arrêt de la compilation
+  T-rex.cpp
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\assert.h(14): error C2059: erreur de syntaxe : 'chaîne'
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\assert.h(14): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rex.h(40): error C3254: 'TrexTalking' : la classe contient une substitution explicite '{ctor}', mais ne dérive pas d'une interface qui contient la déclaration de fonction
+d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rex.h(40): error C2838: '{ctor}' : nom qualifié non conforme dans une déclaration de membre
+d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rex.h(40): error C2535: 'TrexTalking::TrexTalking(void)' : fonction membre déjà définie ou déclarée
+  d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rexownedstates.h(106): note: voir la déclaration de 'TrexTalking::TrexTalking'
+d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rex.h(44): error C3254: 'TrexTalking' : la classe contient une substitution explicite '{dtor}', mais ne dérive pas d'une interface qui contient la déclaration de fonction
+d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rex.h(44): error C2838: '{dtor}' : nom qualifié non conforme dans une déclaration de membre
+d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rexownedstates.h(92): fatal error C1075: l'élément accolade '{' gauche n'a pas été équilibré en fin du fichier
   Génération de code en cours...
-  Compilation en cours...
-  T-rexOwnedStates.cpp
-  Génération de code en cours...
-  WestWorldWithMessaging.vcxproj -> D:\Users\PatrickBeatBender\Documents\GitHub\AI_TP1\WestWorldWithMessaging\.\Debug\WestWorldWithMessaging.exe
-  WestWorldWithMessaging.vcxproj -> .\Debug/WestWorldWithMessaging.pdb (Full PDB)
