@@ -289,4 +289,40 @@ bool EatStew::OnMessage(Miner* pMiner, const Telegram& msg)
   return false;
 }
 
+//------------------------------------------------------------------------FightTrex
+
+FightWithTrex* FightWithTrex::Instance()
+{
+	static FightWithTrex instance;
+
+	return &instance;
+}
+
+void FightWithTrex::Enter(Miner* pMiner)
+{
+	
+	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Go to hell Trex, I'M gonna rip your head off!";
+	
+}
+
+void FightWithTrex::Execute(Miner* pMiner)
+{
+
+
+
+}
+
+void FightWithTrex::Exit(Miner* pMiner)
+{
+
+
+
+}
+
+bool FightWithTrex::OnMessage(Miner* pMiner, const Telegram& msg)
+{
+	//send msg to global message handler
+	return false;
+}
+
 

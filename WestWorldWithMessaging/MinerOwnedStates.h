@@ -173,6 +173,31 @@ public:
 };
 
 
+//Miner fight with the Trex
+class FightWithTrex : public State<Miner>
+{
+private:
+
+	FightWithTrex() {}
+
+	//copy ctor and assignment should be private
+	FightWithTrex(const FightWithTrex&);
+	FightWithTrex& operator=(const FightWithTrex&);
+
+public:
+
+	//this is a singleton
+	static FightWithTrex* Instance();
+
+	virtual void Enter(Miner* miner);
+
+	virtual void Execute(Miner* miner);
+
+	virtual void Exit(Miner* miner);
+
+	virtual bool OnMessage(Miner* agent, const Telegram& msg);
+};
+
 
 
 #endif
