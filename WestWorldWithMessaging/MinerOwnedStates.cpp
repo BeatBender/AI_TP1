@@ -301,7 +301,7 @@ FightWithTrex* FightWithTrex::Instance()
 void FightWithTrex::Enter(Miner* pMiner)
 {
 	
-	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Go to hell Trex, I'M gonna rip your head off!";
+	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Go to hell Trex, I'm gonna rip your head off!";
 	
 }
 
