@@ -1,16 +1,1 @@
-﻿  main.cpp
-d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\main.cpp(43): error C2660: 'Miner::Update' : la fonction ne prend pas 1 arguments
-d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\main.cpp(17): fatal error C1075: l'élément accolade '{' gauche n'a pas été équilibré en fin du fichier
-  T-rexOwnedStates.cpp
-  T-rex.cpp
-  MinersWifeOwnedStates.cpp
-  MinersWife.cpp
-  MinerOwnedStates.cpp
-  Miner.cpp
-  MessageDispatcher.cpp
-  EntityManager.cpp
-  BaseGameEntity.cpp
-  CrudeTimer.cpp
-  Génération de code en cours...
-d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rex.cpp(14): error C4716: 'Trex::Update' : doit retourner une valeur
-d:\users\patrickbeatbender\documents\github\ai_tp1\westworldwithmessaging\t-rex.cpp(24): warning C4715: 'Trex::Drunk' : les chemins de contrôle ne retournent pas tous une valeur
+﻿  T-rexOwnedStates.cpp
