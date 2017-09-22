@@ -230,11 +230,20 @@ void QuenchThirst::Enter(Miner* pMiner)
     pMiner->ChangeLocation(saloon);
 
     cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Boy, ah sure is thusty! Walking to the saloon";
+
   }
+
+
 }
 
 void QuenchThirst::Execute(Miner* pMiner)
 {
+	if (pMiner->getTrexDrunlevel() >= 5)
+	{
+
+		pMiner->GetFSM()->ChangeState(FightWithTrex::Instance());
+	}
+
   pMiner->BuyAndDrinkAWhiskey();
 
   cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "That's mighty fine sippin' liquer";
@@ -307,15 +316,17 @@ void FightWithTrex::Enter(Miner* pMiner)
 
 void FightWithTrex::Execute(Miner* pMiner)
 {
-
-
+	
+	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "paf paf paf pouff ouch!!!!";
+	if(pMiner->getTrexDrunlevel() == 8)
+		pMiner->GetFSM()->RevertToPreviousState();
 
 }
 
 void FightWithTrex::Exit(Miner* pMiner)
 {
 
-
+	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Go to sleep and never come back";
 
 }
 
