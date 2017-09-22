@@ -5,7 +5,7 @@ bool Trex::HandleMessage(const Telegram& msg)
 {
 	return m_pStateMachine->HandleMessage(msg);
 }
-void Trex::Update()
+int Trex::Update(int miner_location)
 {
 	//set text color to green
 	SetTextColor(FOREGROUND_BLUE | FOREGROUND_INTENSITY);

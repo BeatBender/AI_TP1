@@ -54,7 +54,7 @@ public:
 	~Trex() { delete m_pStateMachine; }
 
 	//this must be implemented
-	void Update();
+	int Update(int);
 
 	//so must this
 	virtual bool  HandleMessage(const Telegram& msg);
@@ -69,6 +69,7 @@ public:
 	void          ChangeLocation(location_type loc) { m_Location = loc; }
 
 	bool          Drunk()const;
+	int			  GetDrunkLevel()	   { return m_drunklevel; }
 	void          DecreaseDrunkLevel() { m_drunklevel = 0; }
 	void          IncreaseDrunkLevel() { m_drunklevel += 1; }
 

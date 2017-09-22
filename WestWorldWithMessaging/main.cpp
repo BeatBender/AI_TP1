@@ -29,30 +29,24 @@ int main()
   //create his wife
   MinersWife* Elsa = new MinersWife(ent_Elsa);
 
-  Trex* Rectum = new Trex(2);
+  //create a drunk T-rex
+  Trex* _trex = new Trex(2);
 
   //register them with the entity manager
   EntityMgr->RegisterEntity(Bob);
   EntityMgr->RegisterEntity(Elsa);
-  EntityMgr->RegisterEntity(Rectum);
+  EntityMgr->RegisterEntity(_trex);
 
   //run Bob and Elsa through a few Update calls
   for (int i=0; i<30; ++i)
   { 
-    Bob->Update();
+    Bob->Update(_trex->GetDrunkLevel());
     Elsa->Update();
-	Rectum->Update();
+	_trex->Update(Bob->Location());
 
-    //dispatch any delayed messages
-    Dispatch->DispatchDelayedMessages();
-
-    Sleep(800);
-  }
-
-  //tidy up
   delete Bob;
   delete Elsa;
-  delete Rectum;
+  delete _trex;
 
   //wait for a keypress before exiting
   PressAnyKeyToContinue();
