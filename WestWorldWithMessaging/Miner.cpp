@@ -6,7 +6,7 @@ bool Miner::HandleMessage(const Telegram& msg)
 }
 
 
-void Miner::Update(int TrexDrunlevel)
+void Miner::Update()
 {
   SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
 
@@ -46,11 +46,4 @@ bool Miner::Fatigued()const
   }
 
   return false;
-}
-
-
-int Miner::getLocation()
-{
-	return m_Location;
-
 }

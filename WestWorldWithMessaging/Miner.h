@@ -75,7 +75,7 @@ public:
   ~Miner(){delete m_pStateMachine;}
 
   //this must be implemented
-  void Update(int);
+  void Update();
 
   //so must this
   virtual bool  HandleMessage(const Telegram& msg);
@@ -104,8 +104,6 @@ public:
 
   bool          Thirsty()const; 
   void          BuyAndDrinkAWhiskey(){m_iThirst = 0; m_iMoneyInBank-=2;}
-
-  int			getLocation();
 
 };
 

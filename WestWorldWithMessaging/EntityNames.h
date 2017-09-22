@@ -7,9 +7,7 @@ enum
 {
   ent_Miner_Bob,
 
-  ent_Elsa,
-
-  ent_Trex
+  ent_Elsa
 };
 
 inline std::string GetNameOfEntity(int n)
@@ -23,10 +21,6 @@ inline std::string GetNameOfEntity(int n)
   case ent_Elsa:
     
     return "Elsa"; 
-
-  case ent_Trex:
-
-	  return "Trex";
 
   default:
 

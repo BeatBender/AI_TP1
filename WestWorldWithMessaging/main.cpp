@@ -41,7 +41,6 @@ int main()
   { 
     Bob->Update();
     Elsa->Update();
-
 	Rectum->Update();
 
     //dispatch any delayed messages

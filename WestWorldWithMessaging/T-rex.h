@@ -19,7 +19,7 @@ struct Telegram;
 
 
 //T-Rex maximum drunk level
-const int maxdrunklevel = 8;
+const int maxdrunklevel = 5;
 
 
 class Trex: public BaseGameEntity
