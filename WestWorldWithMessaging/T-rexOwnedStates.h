@@ -109,4 +109,33 @@ private:
 	TrexTalking(const TrexTalking&);
 	TrexTalking& operator=(const TrexTalking&);
 };
+
+//------------------------------------------------------------------------
+//
+// State : TRexFighting
+// In this state, the T-rex is fighting with Bob the miner since he is
+// in the bar and the T-rex is too drunk.
+//
+//------------------------------------------------------------------------
+class TrexFighting : public State<Trex>
+{
+public:
+	//this is a singleton
+	static TrexFighting* Instance();
+
+	virtual void Enter(Trex* trex);
+
+	virtual void Execute(Trex* trex);
+
+	virtual void Exit(Trex* trex);
+
+	virtual bool OnMessage(Trex* agent, const Telegram& msg);
+
+private:
+	TrexFighting() {}
+
+	//copy ctor and assignment should be private
+	TrexFighting(const TrexFighting&);
+	TrexFighting& operator=(const TrexFighting&);
+};
 #endif

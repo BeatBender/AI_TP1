@@ -9,6 +9,8 @@ int Trex::Update(int miner_location)
 {
 	//set text color to green
 	SetTextColor(FOREGROUND_BLUE | FOREGROUND_INTENSITY);
+	
+	MinerLocations = miner_location;
 
 	m_pStateMachine->Update();
 }
