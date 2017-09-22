@@ -15,28 +15,29 @@ std::ofstream os;
 
 int main()
 {
-//define this to send output to a text file (see locations.h)
+	//define this to send output to a text file (see locations.h)
 #ifdef TEXTOUTPUT
-  os.open("output.txt");
+	os.open("output.txt");
 #endif
 
-  //seed random number generator
-  srand((unsigned) time(NULL));
+	//seed random number generator
+	srand((unsigned)time(NULL));
 
-  //create a miner
-  Miner* Bob = new Miner(ent_Miner_Bob);
+	//create a miner
+	Miner* Bob = new Miner(ent_Miner_Bob);
 
-  //create his wife
-  MinersWife* Elsa = new MinersWife(ent_Elsa);
+	//create his wife
+	MinersWife* Elsa = new MinersWife(ent_Elsa);
 
-  //create a drunk T-rex
-  Trex* _trex = new Trex(2);
+	//create a drunk T-rex
+	Trex* _trex = new Trex(2);
 
-  //register them with the entity manager
-  EntityMgr->RegisterEntity(Bob);
-  EntityMgr->RegisterEntity(Elsa);
-  EntityMgr->RegisterEntity(_trex);
+	//register them with the entity manager
+	EntityMgr->RegisterEntity(Bob);
+	EntityMgr->RegisterEntity(Elsa);
+	EntityMgr->RegisterEntity(_trex);
 
+<<<<<<< HEAD
   //run Bob and Elsa through a few Update calls
   for (int i = 0; i < 30; ++i)
   {
@@ -57,9 +58,28 @@ int main()
 
   return 0;
 }
+=======
+	//run Bob and Elsa through a few Update calls
+	for (int i = 0; i < 30; ++i)
+	{
+		
+		Bob->Update(_trex->GetDrunkLevel());
+		Elsa->Update();
+		_trex->Update(Bob->Location());
+
+	}
+
+	delete Bob;
+	delete Elsa;
+	delete _trex;
+>>>>>>> 21df958cf35688043e098c8ff4e4e9f0202569f9
+
+	//wait for a keypress before exiting
+	PressAnyKeyToContinue();
 
 
+	return 0;
 
-
+}
 
 

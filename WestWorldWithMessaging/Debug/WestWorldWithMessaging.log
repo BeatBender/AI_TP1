@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  MessageDispatcher.cpp
   Génération de code en cours...
   Compilation en cours...
@@ -8,3 +9,11 @@
   Génération de code en cours...
   WestWorldWithMessaging.vcxproj -> D:\Users\PatrickBeatBender\Documents\GitHub\AI_TP1\WestWorldWithMessaging\.\Debug\WestWorldWithMessaging.exe
   WestWorldWithMessaging.vcxproj -> .\Debug/WestWorldWithMessaging.pdb (Full PDB)
+=======
+﻿  T-rexOwnedStates.cpp
+<<<<<<< HEAD
+  WestWorldWithMessaging.vcxproj -> C:\Users\Utilisateur\Documents\Ecole\Automne2017\Git\AI_TP1\WestWorldWithMessaging\.\Debug\WestWorldWithMessaging.exe
+  WestWorldWithMessaging.vcxproj -> .\Debug/WestWorldWithMessaging.pdb (Full PDB)
+=======
+>>>>>>> d9d9aec8624f7e00a42e7d76a9a104f7e4b2193b
+>>>>>>> 21df958cf35688043e098c8ff4e4e9f0202569f9
