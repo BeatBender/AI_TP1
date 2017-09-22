@@ -33,6 +33,7 @@ private:
 	//before 5, Trex is talking with other customers. Between 5 and 8, Trex is terrorizing/fighting other customers. 
 	//After 8, Trex is sleeping on the bar. Drunklevel is decreasing. At 0, Trex wakes up and talks to customers again.
 	int m_drunklevel;
+	int MinerLocations;
 
 public:
 
@@ -55,6 +56,7 @@ public:
 
 	//this must be implemented
 	int Update(int);
+	void Update();
 
 	//so must this
 	virtual bool  HandleMessage(const Telegram& msg);
@@ -70,6 +72,7 @@ public:
 
 	bool          Drunk()const;
 	int			  GetDrunkLevel()	   { return m_drunklevel; }
+	int			  GetMinerLocation()   { return MinerLocations; }
 	void          DecreaseDrunkLevel() { m_drunklevel = 0; }
 	void          IncreaseDrunkLevel() { m_drunklevel += 1; }
 

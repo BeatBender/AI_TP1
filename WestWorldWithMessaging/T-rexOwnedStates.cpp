@@ -27,12 +27,15 @@ TerrorizeCustomers* TerrorizeCustomers::Instance()
 
 void TerrorizeCustomers::Enter(Trex* pTrex)
 {
-
+	
 }
 
 void TerrorizeCustomers::Execute(Trex* pTrex)
 {
-
+	if (pTrex->GetMinerLocation() == 3)
+	{
+		pTrex->GetFSM()->ChangeState(TrexFighting::Instance());
+	}
 }
 
 void TerrorizeCustomers::Exit(Trex* pTrex)
@@ -120,5 +123,37 @@ void TrexTalking::Exit(Trex* pTrex)
 
 bool TrexTalking::OnMessage(Trex* pTrex, const Telegram& msg)
 {
+	return false;
+}
+
+//------------------------------------------------------------------------methods for TrexFighting
+TrexFighting* TrexFighting::Instance()
+{
+	static TrexFighting instance;
+
+	return &instance;
+}
+
+void TrexFighting::Enter(Trex* pTrex)
+{
+
+}
+
+void TrexFighting::Execute(Trex* pTrex)
+{
+	if (pTrex->GetDrunkLevel() == 8)
+	{
+		pTrex->GetFSM()->ChangeState(TrexSleeping::Instance());
+	}
+}
+
+void TrexFighting::Exit(Trex* pTrex)
+{
+
+}
+
+bool TrexFighting::OnMessage(Trex* pTrex, const Telegram& msg)
+{
+
 	return false;
 }
