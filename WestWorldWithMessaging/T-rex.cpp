@@ -13,6 +13,14 @@ int Trex::Update(int miner_location)
 	MinerLocations = miner_location;
 
 	m_pStateMachine->Update();
+
+	return 0;
+}
+
+void Trex::Update()
+{
+
+	return;
 }
 
 bool Trex::Drunk()const
@@ -22,5 +30,5 @@ bool Trex::Drunk()const
 	else if (m_drunklevel <= maxdrunklevel-1)
 		return false;
 	
-	
+	return false;
 }

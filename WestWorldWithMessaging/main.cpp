@@ -38,16 +38,18 @@ int main()
   EntityMgr->RegisterEntity(_trex);
 
   //run Bob and Elsa through a few Update calls
-  for (int i=0; i<30; ++i)
-  { 
-
+  for (int i = 0; i < 30; ++i)
+  {
 	  Bob->Update(_trex->GetDrunkLevel());
-    Elsa->Update();
-	_trex->Update(Bob->Location());
+	  Elsa->Update();
+	  _trex->Update(Bob->Location());
+	  Sleep(1000);
+  }
 
-  delete Bob;
-  delete Elsa;
-  delete _trex;
+	  delete Bob;
+	  delete Elsa;
+	  delete _trex;
+  
 
   //wait for a keypress before exiting
   PressAnyKeyToContinue();

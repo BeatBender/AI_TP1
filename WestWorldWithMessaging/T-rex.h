@@ -55,8 +55,9 @@ public:
 	~Trex() { delete m_pStateMachine; }
 
 	//this must be implemented
-	int Update(int);
 	void Update();
+	int Update(int);
+	
 
 	//so must this
 	virtual bool  HandleMessage(const Telegram& msg);
