@@ -45,10 +45,10 @@
     <ClCompile Include="..\..\Common\Time\CrudeTimer.cpp">
       <Filter>misc</Filter>
     </ClCompile>
-    <ClCompile Include="T-rex.cpp">
+    <ClCompile Include="T-rexOwnedStates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="T-rexOwnedStates.cpp">
+    <ClCompile Include="T-rex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -110,10 +110,10 @@
     <ClInclude Include="..\..\Common\misc\utils.h">
       <Filter>misc</Filter>
     </ClInclude>
-    <ClInclude Include="T-rex.h">
+    <ClInclude Include="T-rexOwnedStates.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="T-rexOwnedStates.h">
+    <ClInclude Include="T-rex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
