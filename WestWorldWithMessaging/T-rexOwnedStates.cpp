@@ -27,20 +27,33 @@ TerrorizeCustomers* TerrorizeCustomers::Instance()
 
 void TerrorizeCustomers::Enter(Trex* pTrex)
 {
-	
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "BRRR I want to fight!!";
+
+
 }
 
 void TerrorizeCustomers::Execute(Trex* pTrex)
 {
+	pTrex->IncreaseDrunkLevel();
+
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "I gonna bite you warar!!";
+
 	if (pTrex->GetMinerLocation() == 3)
 	{
 		pTrex->GetFSM()->ChangeState(TrexFighting::Instance());
 	}
+
+	if (pTrex->Drunk())
+	{
+		pTrex->GetFSM()->ChangeState(TrexSleeping::Instance());
+	}
+
+
 }
 
 void TerrorizeCustomers::Exit(Trex* pTrex)
 {
-
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "Going to sleep";
 }
 
 bool TerrorizeCustomers::OnMessage(Trex* pTrex, const Telegram& msg)
@@ -105,19 +118,22 @@ void TrexTalking::Execute(Trex* pTrex)
 	pTrex->IncreaseDrunkLevel();
 
 	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "WARAARARRARA";
-
-	if (pTrex->Drunk())
+	
+	if (pTrex->GetDrunkLevel() == 5)
 	{
-		pTrex->GetFSM()->ChangeState(TrexSleeping::Instance());
+		pTrex->GetFSM()->ChangeState(TerrorizeCustomers::Instance());
+
 	}
+
+	
 
 }
 
 void TrexTalking::Exit(Trex* pTrex)
 {
 
-	//cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": "
-		//<< "**BRRRURUGWWG**";
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": "
+		<< "**BRRRURUGWWG**";
 
 }
 
@@ -136,11 +152,16 @@ TrexFighting* TrexFighting::Instance()
 
 void TrexFighting::Enter(Trex* pTrex)
 {
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "YWYWYW!! Come here Miner I will kill you!";
 
 }
 
 void TrexFighting::Execute(Trex* pTrex)
 {
+	pTrex->IncreaseDrunkLevel();
+
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "WARAARARRARA";
+
 	if (pTrex->GetDrunkLevel() == 8)
 	{
 		pTrex->GetFSM()->ChangeState(TrexSleeping::Instance());
@@ -149,7 +170,7 @@ void TrexFighting::Execute(Trex* pTrex)
 
 void TrexFighting::Exit(Trex* pTrex)
 {
-
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "Going to sleep";
 }
 
 bool TrexFighting::OnMessage(Trex* pTrex, const Telegram& msg)

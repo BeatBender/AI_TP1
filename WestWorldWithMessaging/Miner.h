@@ -54,7 +54,7 @@ private:
   //the higher the value, the more tired the miner
   int                   m_iFatigue;
 
-  int					TrexDrunkLevel;
+  int					TrexDrunkLevel=0;
 
 public:
 
