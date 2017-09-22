@@ -1,4 +1,20 @@
-﻿  T-rex.cpp
+﻿  MinerOwnedStates.cpp
+  Miner.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  main.cpp
+c:\users\utilisateur\documents\ecole\automne2017\git\ai_tp1\westworldwithmessaging\main.cpp(27): error C2259: 'Miner' : impossible d'instancier une classe abstraite
+  c:\users\utilisateur\documents\ecole\automne2017\git\ai_tp1\westworldwithmessaging\main.cpp(27): note: à cause des membres suivants :
+  c:\users\utilisateur\documents\ecole\automne2017\git\ai_tp1\westworldwithmessaging\main.cpp(27): note: 'void BaseGameEntity::Update(void)' : est abstrait
+  c:\users\utilisateur\documents\ecole\automne2017\git\ai_tp1\westworldwithmessaging\basegameentity.h(45): note: voir la déclaration de 'BaseGameEntity::Update'
+c:\users\utilisateur\documents\ecole\automne2017\git\ai_tp1\westworldwithmessaging\main.cpp(42): error C2660: 'Miner::Update' : la fonction ne prend pas 0 arguments
+  MinersWifeOwnedStates.cpp
+  MinersWife.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  T-rex.cpp
+  Génération de code en cours...
 c:\users\utilisateur\documents\ecole\automne2017\git\ai_tp1\westworldwithmessaging\t-rex.cpp(24): warning C4715: 'Trex::Drunk' : les chemins de contrôle ne retournent pas tous une valeur
-  WestWorldWithMessaging.vcxproj -> C:\Users\Utilisateur\Documents\Ecole\Automne2017\Git\AI_TP1\WestWorldWithMessaging\.\Debug\WestWorldWithMessaging.exe
-  WestWorldWithMessaging.vcxproj -> .\Debug/WestWorldWithMessaging.pdb (Full PDB)
+  Compilation en cours...
+  T-rexOwnedStates.cpp
+  Génération de code en cours...

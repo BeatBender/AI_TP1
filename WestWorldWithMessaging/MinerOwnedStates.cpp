@@ -307,8 +307,11 @@ void FightWithTrex::Enter(Miner* pMiner)
 
 void FightWithTrex::Execute(Miner* pMiner)
 {
+	int drunklve =3;
+	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Tastes real good too!";
 
-
+	if(drunklve == 3)
+		pMiner->GetFSM()->RevertToPreviousState();
 
 }
 
