@@ -6,16 +6,7 @@ bool Miner::HandleMessage(const Telegram& msg)
 }
 
 
-void Miner::Update(int _TrexDrunkLevel)
-{
 
-  SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
-
-  m_iThirst += 1;
-  TrexDrunkLevel = _TrexDrunkLevel;
-  
-  m_pStateMachine->Update();
-}
 
 void Miner::Update()
 {
@@ -23,7 +14,8 @@ void Miner::Update()
 	SetTextColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
 
 	m_iThirst += 1;
-	
+
+
 	m_pStateMachine->Update();
 }
 
@@ -59,8 +51,3 @@ bool Miner::Fatigued()const
   return false;
 }
 
-int Miner::getTrexDrunlevel()
-{
-
-	return TrexDrunkLevel;
-}

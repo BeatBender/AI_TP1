@@ -30,7 +30,7 @@ int main()
 	MinersWife* Elsa = new MinersWife(ent_Elsa);
 
 	//create a drunk T-rex
-	Trex* _trex = new Trex(2);
+	Trex* _trex = new Trex(ent_Trex);
 
 	//register them with the entity manager
 	EntityMgr->RegisterEntity(Bob);
@@ -41,9 +41,9 @@ int main()
 	for (int i = 0; i < 30; ++i)
 	{
 		
-		Bob->Update(_trex->GetDrunkLevel());
+		Bob->Update();
 		Elsa->Update();
-		_trex->Update(Bob->Location());
+		_trex->Update();
 
 	}
 

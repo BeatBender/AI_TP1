@@ -134,6 +134,8 @@ public:
 private:
 	TrexFighting() {}
 
+	bool is_Fighting = false;
+
 	//copy ctor and assignment should be private
 	TrexFighting(const TrexFighting&);
 	TrexFighting& operator=(const TrexFighting&);

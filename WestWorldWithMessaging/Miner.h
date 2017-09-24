@@ -54,7 +54,7 @@ private:
   //the higher the value, the more tired the miner
   int                   m_iFatigue;
 
-  int					TrexDrunkLevel=0;
+  
 
 public:
 
@@ -78,7 +78,7 @@ public:
 
   //this must be implemented
   void Update();
-  void Update(int);
+  
 
   //so must this
   virtual bool  HandleMessage(const Telegram& msg);
@@ -108,7 +108,7 @@ public:
   bool          Thirsty()const; 
   void          BuyAndDrinkAWhiskey(){m_iThirst = 0; m_iMoneyInBank-=2;}
 
-  int			getTrexDrunlevel();
+ 
 
 };
 

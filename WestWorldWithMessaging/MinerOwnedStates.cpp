@@ -75,6 +75,7 @@ void EnterMineAndDigForNugget::Exit(Miner* pMiner)
 
 bool EnterMineAndDigForNugget::OnMessage(Miner* pMiner, const Telegram& msg)
 {
+
   //send msg to global message handler
   return false;
 }
@@ -231,18 +232,21 @@ void QuenchThirst::Enter(Miner* pMiner)
 
     cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Boy, ah sure is thusty! Walking to the saloon";
 
+	
   }
 
+  Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY, //time delay
+	  pMiner->ID(),        //ID of sender
+	  ent_Trex,            //ID of recipient
+	  Msg_Saloon,   //the message
+	  NO_ADDITIONAL_INFO);
 
 }
 
 void QuenchThirst::Execute(Miner* pMiner)
 {
-	if (pMiner->getTrexDrunlevel() >= 5)
-	{
+	
 
-		pMiner->GetFSM()->ChangeState(FightWithTrex::Instance());
-	}
 
   pMiner->BuyAndDrinkAWhiskey();
 
@@ -254,14 +258,37 @@ void QuenchThirst::Execute(Miner* pMiner)
 
 void QuenchThirst::Exit(Miner* pMiner)
 { 
-  cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Leaving the saloon, feelin' good";
+
+	if (!TrexDrunk)
+		cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Leaving the saloon, feelin' good";
+	
+  
 }
 
 
 bool QuenchThirst::OnMessage(Miner* pMiner, const Telegram& msg)
 {
+	switch (msg.Msg)
+	{
+	case Msg_Drunk:
+	{
+		TrexDrunk = true;
+		pMiner->GetFSM()->ChangeState(FightWithTrex::Instance());
+
+	}
+
+	case Msg_NotDrunk:
+	{
+		TrexDrunk = false;
+
+	}
+	return true;
+
+	}//end switch
+
+	return false;
   //send msg to global message handler
-  return false;
+  
 }
 
 //------------------------------------------------------------------------EatStew
@@ -310,6 +337,15 @@ FightWithTrex* FightWithTrex::Instance()
 void FightWithTrex::Enter(Miner* pMiner)
 {
 	
+
+	Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY, //time delay
+		pMiner->ID(),        //ID of sender
+		ent_Trex,            //ID of recipient
+		Msg_Fight,   //the message
+		NO_ADDITIONAL_INFO);
+
+	
+	SetTextColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
 	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Go to hell Trex, I'm gonna rip your head off!";
 	
 }
@@ -318,20 +354,35 @@ void FightWithTrex::Execute(Miner* pMiner)
 {
 	
 	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "paf paf paf pouff ouch!!!!";
-	if(pMiner->getTrexDrunlevel() == 8)
-		pMiner->GetFSM()->RevertToPreviousState();
+	
+		
 
 }
 
 void FightWithTrex::Exit(Miner* pMiner)
 {
-
+	SetTextColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
 	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Go to sleep and never come back";
 
 }
 
 bool FightWithTrex::OnMessage(Miner* pMiner, const Telegram& msg)
 {
+
+	switch (msg.Msg)
+	{
+	case Msg_Sleep:
+	{
+		
+		pMiner->GetFSM()->RevertToPreviousState();
+
+	}
+
+	return true;
+
+	}//end switch
+
+	
 	//send msg to global message handler
 	return false;
 }

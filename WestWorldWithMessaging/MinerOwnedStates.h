@@ -91,6 +91,7 @@ class GoHomeAndSleepTilRested : public State<Miner>
 {
 private:
   
+	
   GoHomeAndSleepTilRested(){}
 
   //copy ctor and assignment should be private
@@ -123,6 +124,7 @@ class QuenchThirst : public State<Miner>
 private:
   
   QuenchThirst(){}
+  bool TrexDrunk = false;
 
   //copy ctor and assignment should be private
   QuenchThirst(const QuenchThirst&);

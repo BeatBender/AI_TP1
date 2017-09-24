@@ -29,6 +29,14 @@ void TerrorizeCustomers::Enter(Trex* pTrex)
 {
 	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "BRRR I want to fight!!";
 
+	Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY, //time delay
+		pTrex->ID(),        //ID of sender
+		ent_Miner_Bob,            //ID of recipient
+		Msg_Drunk,   //the message
+		NO_ADDITIONAL_INFO);
+	SetTextColor(FOREGROUND_BLUE | FOREGROUND_INTENSITY);
+
+
 
 }
 
@@ -38,28 +46,50 @@ void TerrorizeCustomers::Execute(Trex* pTrex)
 
 	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "I gonna bite you warar!!";
 
-	if (pTrex->GetMinerLocation() == 3)
-	{
-		pTrex->GetFSM()->ChangeState(TrexFighting::Instance());
-	}
-
 	if (pTrex->Drunk())
 	{
 		pTrex->GetFSM()->ChangeState(TrexSleeping::Instance());
 	}
 
 
+
+
 }
 
 void TerrorizeCustomers::Exit(Trex* pTrex)
 {
-	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "Going to sleep";
+	
 }
 
 bool TerrorizeCustomers::OnMessage(Trex* pTrex, const Telegram& msg)
 {
+	switch (msg.Msg)
+	{
+	case Msg_Saloon:
+	{
+		
+		Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY, //time delay
+			pTrex->ID(),        //ID of sender
+			ent_Miner_Bob,            //ID of recipient
+			Msg_Drunk,   //the message
+			NO_ADDITIONAL_INFO);
+
+		SetTextColor(FOREGROUND_BLUE | FOREGROUND_INTENSITY);
+		pTrex->GetFSM()->ChangeState(TrexFighting::Instance());
+	}
+
+	case Msg_Fight:
+	{
+		pTrex->GetFSM()->ChangeState(TrexFighting::Instance());
+
+	}
+
+	return true;
+
+	}//end switch
 
 	return false;
+	
 }
 
 //------------------------------------------------------------------------methods for TrexSleeping
@@ -72,6 +102,14 @@ TrexSleeping* TrexSleeping::Instance()
 
 void TrexSleeping::Enter(Trex* pTrex)
 {
+
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "Going to sleep";
+
+	Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY, //time delay
+		pTrex->ID(),        //ID of sender
+		ent_Miner_Bob,            //ID of recipient
+		Msg_Sleep,   //the message
+		NO_ADDITIONAL_INFO);
 
 }
 
@@ -117,7 +155,7 @@ void TrexTalking::Execute(Trex* pTrex)
 {
 	pTrex->IncreaseDrunkLevel();
 
-	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "WARAARARRARA";
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "WARAARARRARA! Hello girls.";
 	
 	if (pTrex->GetDrunkLevel() == 5)
 	{
@@ -132,13 +170,31 @@ void TrexTalking::Execute(Trex* pTrex)
 void TrexTalking::Exit(Trex* pTrex)
 {
 
-	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": "
-		<< "**BRRRURUGWWG**";
+	
 
 }
 
 bool TrexTalking::OnMessage(Trex* pTrex, const Telegram& msg)
 {
+
+	switch (msg.Msg)
+	{
+	case Msg_Saloon:
+	{
+
+		Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY, //time delay
+			pTrex->ID(),        //ID of sender
+			ent_Miner_Bob,            //ID of recipient
+			Msg_NotDrunk,   //the message
+			NO_ADDITIONAL_INFO);
+
+		SetTextColor(FOREGROUND_BLUE | FOREGROUND_INTENSITY);
+
+	}
+
+	return true;
+
+	}//end switch
 	return false;
 }
 
@@ -152,15 +208,22 @@ TrexFighting* TrexFighting::Instance()
 
 void TrexFighting::Enter(Trex* pTrex)
 {
-	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "YWYWYW!! Come here Miner I will kill you!";
+	if (!is_Fighting)
+	{
+		SetTextColor(FOREGROUND_BLUE | FOREGROUND_INTENSITY);
+		cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "YWYWYW!! Come here Miner I will kill you!";
+		is_Fighting = true;
+	}
 
 }
 
 void TrexFighting::Execute(Trex* pTrex)
 {
 	pTrex->IncreaseDrunkLevel();
+	
+	is_Fighting = false;
 
-	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "WARAARARRARA";
+	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "WARAARARRARA! PIF PAF!!";
 
 	if (pTrex->GetDrunkLevel() == 8)
 	{
@@ -170,7 +233,7 @@ void TrexFighting::Execute(Trex* pTrex)
 
 void TrexFighting::Exit(Trex* pTrex)
 {
-	cout << "\n" << GetNameOfEntity(pTrex->ID()) << ": " << "Going to sleep";
+	//is_Fighting = false;
 }
 
 bool TrexFighting::OnMessage(Trex* pTrex, const Telegram& msg)
